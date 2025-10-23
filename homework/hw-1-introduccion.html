@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduccion</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./hw-1.css">
+
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__left">
+            <div>
+                <h1 class="heading-primary">HTML &mdash; El atributo ID</h1>
+                <p>Aplicaciones web</p>
+            </div>
+
+            <a href="./hw-1.html" class="header__logo"><img class="header__img" src="../assets/img/logo-uta.png" alt="Logo Uta"></a>
+        </div>
+
+        <nav class="navigation">
+            <ul class="navigation__list">
+                <li class="navigation__item navigation__item--active"><a href="./hw-1-introduccion.html" class="navigation__link">Introducción</a></li>
+                <li class="navigation__item"><a href="./hw-1-clases-e-identificacion.html" class="navigation__link">Clases e Identificación</a></li>
+                <li class="navigation__item"><a href="./hw-1-marcadores-enlaces.html" class="navigation__link">Marcadores ID y enlaces</a></li>
+                <li class="navigation__item"><a href="./hw-1-uso-javascript.html" class="navigation__link">Uso en Javascript</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content">
+        
+        <div class="content__grid">
+            <ul class="content__info">
+                <h1 class="heading-secondary">El atributo id</h1>
+                <p>El <span>id</span> atributo especifica un identificador único para un elemento HTML. Su valor id debe ser único dentro del documento HTML.</p>
+                <p>El <span>id</span> atributo se utiliza para señalar una declaración de estilo específica en una hoja de estilos. JavaScript también lo utiliza para acceder y manipular el elemento con el ID específico.</p>
+                <p>La sintaxis para id es: escribir un carácter almohadilla (#), seguido del nombre del id. Luego, definir las propiedades CSS entre llaves {}.</p>
+            </ul>
+            <div class="content__image">
+                <img class="content__img" src="../assets/img/id-image.png" alt="Ejemplo de id">
+            </div>
+        </div>
+        <div class="content__grid">
+            <div class="content__image">
+                <img class="content__img" src="../assets/img/id-image-2.png" alt="Ejemplo de id">
+            </div>
+            <ul class="content__info">
+                <h1 class="heading-secondary">Notas</h1>
+                <div class="content__note">
+                    <p>Nota: ¡El nombre de identificación distingue entre mayúsculas y minúsculas</p>
+                    <p>Nota:  El nombre de identificación debe contener al menos un carácter, no puede comenzar con un número y no debe contener espacios en blanco (espacios, tabulaciones, etc.).</p>
+                </div>
+            </ul>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 &mdash; Universidad Tecnológica de Aguascalientes</p>
+        <cite>Saulo Román Santillán Nava</cite>
+    </footer>
+
+    <script src="./hw-1.js"></script>
+
+</body>
+</html>

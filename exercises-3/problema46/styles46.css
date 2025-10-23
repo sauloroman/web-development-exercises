@@ -1,0 +1,41 @@
+#contenedor{
+    width: 780px;
+    margin: 0 auto;
+    border: 1px solid #333;
+}
+#cabecera{
+    margin: 0;
+    color: white;
+    background-color:#a49ef7;
+}
+#columnaIzquierda{
+    width: 220px;
+    height: 550px;
+    float: left;
+    padding: 15px 30px;
+    background-color: rgb(206, 217, 237);
+    box-sizing: border-box;
+}
+#columnaCentral{
+    width: 340px;
+    height: 550px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    float: left;
+    padding: 10px;
+    background-color: rgb(206, 217, 237);
+    box-sizing: border-box;
+}
+#columnaDerecha{
+    width: 220px;
+    height: 550px;
+    float: right;
+    padding: 10px 30px;
+    background-color: rgb(206, 217, 237);
+    box-sizing: border-box;
+}
+#pie{
+    margin: 0;
+    color: white;
+    background-color:#a49ef7;
+}

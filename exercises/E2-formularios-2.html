@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios 2 - Formularios 2</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+            width: 100rem;
+            max-width: 90%;
+            margin: 0 auto;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.6rem;
+        }
+
+        button {
+            width: fit-content;
+            padding: .5rem 2rem;
+        }
+
+        fieldset div {
+            margin-bottom: 1rem;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <form action="/procesar-formulario" method="post">
+    <fieldset>
+        <legend>Datos fiscales</legend>
+
+        <label for="sector">Sector:</label>
+        <select name="sector" id="sector" size="5" multiple>
+            <option value="automocion">Automoción</option>
+            <option value="metal" selected>Metal</option>
+            <option value="informatica">Informática</option>
+            <option value="finanzas" selected>Finanzas</option>
+            <option value="otro">Otro (Baja)</option>
+        </select>
+        
+        <br><br>
+
+        <div>
+            <input type="checkbox" id="autonomo" name="tipo_empleo" value="autonomo">
+            <label for="autonomo">Autónomo</label>
+
+            <input type="checkbox" id="cuenta_ajena" name="tipo_empleo" value="cuenta_ajena">
+            <label for="cuenta_ajena">Cuenta ajena</label>
+
+            <input type="checkbox" id="no_sabe" name="tipo_empleo" value="no_sabe">
+            <label for="no_sabe">No sabe</label>
+        </div>
+        
+        <label for="funcion">Describa su función:</label>
+        <br>
+        <textarea id="funcion" name="funcion" rows="4" cols="50" placeholder="Escriba aquí"></textarea>
+
+    </fieldset>
+
+    </form>
+
+</body>
+</html>

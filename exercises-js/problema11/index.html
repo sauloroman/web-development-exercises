@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 11</title>
+</head>
+<body>
+    <script>
+        const word = prompt("Palabra: ")
+        let translation = ''
+
+        switch( word ) {
+            case 'casa':
+                translation = 'house'
+                break;
+            case 'mesa':
+                translation = 'table'
+                break;
+            case 'perro':
+                translation = 'dog'
+                break;
+            case 'gato':
+                translation = 'cat'
+                break;
+            default:
+                translation = 'No translation'
+                break;
+        }
+
+        document.write("Traducción: " + translation)
+
+    </script>
+</body>
+</html>

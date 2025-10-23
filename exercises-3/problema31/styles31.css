@@ -1,0 +1,42 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+div {
+    background-color: #f0f0f0;
+    padding: 0.5rem;
+    border: 2px solid #333;
+    margin-bottom: 30px;
+}
+
+.size-16 {
+    font-size: 16px;
+}
+
+.size-20 {
+    font-size: 20px;
+}
+
+.size-24 {
+    font-size: 24px;
+}
+
+.size-32 {
+    font-size: 32px;
+}
+
+p {
+    margin: 0 0 10px 0;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}

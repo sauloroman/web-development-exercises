@@ -1,0 +1,28 @@
+.contenido {
+    background-color: #9e9e9e;
+    width: 1200px;
+    column-gap: 20px;
+    text-align: justify;
+    column-count: 2;
+}
+
+/* Menos de 768px: 2 columnas */
+@media (max-width: 767px) {
+  .contenido {
+    column-count: 2;
+  }
+}
+
+/* Entre 768px y 1199px: 2 columnas */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .contenido {
+    column-count: 2;
+  }
+}
+
+/* 1200px o más: 2 columnas */
+@media (min-width: 1200px) {
+  .contenido {
+    column-count: 2;
+  }
+}

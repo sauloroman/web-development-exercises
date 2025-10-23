@@ -1,0 +1,20 @@
+ol:nth-child(1) {
+    gap: 20px;
+}
+
+ol:nth-child(5) {
+    gap: 50px;
+}
+
+ol:nth-child(1), ol:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+}
+
+ul:nth-child(1) {
+    list-style-position: inside;
+}
+
+ul:nth-child(2) {
+    list-style-position: outside;
+}

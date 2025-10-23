@@ -1,0 +1,11 @@
+.tabla55 { 
+    border-collapse: collapse;
+    width: 850px;
+}
+tr:only-child {
+    background-color: rgb(255, 0, 0);
+}
+
+td {
+     padding: 8px;
+}

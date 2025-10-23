@@ -1,0 +1,9 @@
+body {
+    width: 65%;
+}
+
+p::first-letter {
+    float: left;
+    font-size: 300%;
+}
+

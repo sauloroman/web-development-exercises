@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 7</title>
+</head>
+<body>
+    <script>
+
+        document.write('<h3>Problema 7.1</h3>')
+        const num1 = parseFloat(prompt("Numero 1: "))
+        const num2 = parseFloat(prompt("Numero 2: "))
+        
+        if ( num1 > num2 ) {
+            const suma = num1 + num2
+            const difference = num1 - num2
+            document.write("<p>Suma: " + suma + "</p>")
+            document.write("<p>Diferencia: " + difference + "</p>")
+        } else {
+            const product = num1 * num2
+            const divide = num1 / num2
+            document.write("<p>Producto: " + product + "</p>")
+            document.write("<p>Division: " + divide + "</p>")
+        }
+
+        document.write('<h2>Problema 7.2</h2>')
+        const nota1 = parseFloat(prompt("Nota 1: "))
+        const nota2 = parseFloat(prompt("Nota 2: "))
+        const nota3 = parseFloat(prompt("Nota 3: "))
+        const promedio = (nota1 + nota2 + nota3) / 3
+
+        if ( promedio >= 4 ) {
+            document.write("<p>Regular: " + promedio + "</p>")
+        } else {
+            document.write("<p>Reprobado</p>")
+        }
+
+        document.write('<h2>Problema 7.3</h2>')
+        const num = parseInt(prompt("Ingresa un numero: "))
+        if ( num <= 9 ) {
+            document.write('<p>Un dígito</p>')
+        } else if ( num > 9 && num < 100 ) {
+            document.write('<p>Dos dígitos</p>')
+        } else {
+            document.write('<p>Más de dos dígitos</p>')
+        }
+
+    </script>
+</body>
+</html>

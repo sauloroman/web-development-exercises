@@ -1,0 +1,27 @@
+body {
+    margin: 0; 
+}
+
+p {
+    margin: 0;
+    padding: 10px;
+    font-family: sans-serif;
+}
+
+p:nth-child(1)  { background: #000000; color: #ffffff; }
+p:nth-child(2)  { background: #111111; color: #ffffff; }
+p:nth-child(3)  { background: #222222; color: #ffffff; }
+p:nth-child(4)  { background: #333333; color: #ffffff; }
+p:nth-child(5)  { background: #444444; color: #ffffff; }
+p:nth-child(6)  { background: #555555; color: #ffffff; }
+p:nth-child(7)  { background: #666666; color: #ffffff; }
+p:nth-child(8)  { background: #777777; color: #ffff00; }
+p:nth-child(9)  { background: #888888; color: #000000; }
+p:nth-child(10) { background: #999999; color: #000000; }
+p:nth-child(11) { background: #aaaaaa; color: #000000; }
+p:nth-child(12) { background: #bbbbbb; color: #000000; }
+p:nth-child(13) { background: #cccccc; color: #000000; }
+p:nth-child(14) { background: #dddddd; color: #000000; }
+p:nth-child(15) { background: #eeeeee; color: #000000; }
+p:nth-child(16) { background: #ffffff; color: #000000; }
+

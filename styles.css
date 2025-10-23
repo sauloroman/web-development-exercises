@@ -1,0 +1,125 @@
+:root {
+    --text-color: #555555;
+    --main-color: #003A5D;
+    --white-color: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: sans-serif;
+    height: 100vh;
+    color: var(--text-color);
+}
+
+.logo__img {
+    width: 18rem;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.menu {
+    width: 100%;
+}
+
+.menu__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+.menu__item {
+    display: block;
+    border: 1px solid #aaaa;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 10rem;
+    cursor: pointer;
+    transition: background .4s ease;
+}
+
+.menu__item:hover {
+    background-color: var(--main-color);
+}
+
+.menu__link {
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+    font-weight: 600;
+    color: #555;
+    transition: color .4s ease;
+}
+
+.menu__item:hover .menu__link {
+    color: var(--white-color);
+}
+
+.menu-internal {
+    width: 120rem;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.menu-internal h1 {
+    text-align: center;
+    margin: 3rem 0;
+    color: var(--main-color);
+}
+
+.menu-internal nav {
+    width: 60rem;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.menu-internal ol, .menu-internal ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.menu-internal a {
+    display: block;
+    padding: 1rem 2rem;
+    border: 1px solid #ddd;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 100px;
+    color: var(--text-color);
+    transition: all .4s ease;
+}
+
+.menu-internal a:hover {
+    background-color: var(--main-color);
+    color: var(--white-color);
+}

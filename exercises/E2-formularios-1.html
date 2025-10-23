@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios 2 - Formularios 1</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+            width: 100rem;
+            max-width: 90%;
+            margin: 0 auto;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.6rem;
+        }
+
+        button {
+            width: fit-content;
+            padding: .5rem 2rem;
+        }
+
+        fieldset div {
+            margin-bottom: 1rem;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <form>
+        <fieldset>
+            <legend>Datos fiscales</legend>
+
+            <div>
+                <input id="en-paro" value="En paro" type="radio" name="fiscales">
+                <label for="en-paro">En paro</label>
+            </div>
+
+            <div>
+                <input id="autonomo" value="Autonomo" type="radio" name="fiscales">
+                <label for="autonomo">Autónomo</label>
+            </div>
+            
+            <div>
+                <input id="ajena" value="Ajena" type="radio" name="fiscales">
+                <label for="ajena">Por c. ajena</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Datos personales</legend>
+
+            <div>
+                <label for="nombre">Nombre: </label>
+                <input id="nombre" type="text">
+            </div>
+            <div>
+                <label for="apellido">Apellidos: </label>
+                <input id="apellido" type="text">
+            </div>
+            <div>
+                <label for="sueldo">Sueldo</label>
+                <select name="sueldo" id="sueldo">
+                    <option value="mas de 400">Más de 400 euros</option>
+                    <option value="menos de 400">Menos de 400 euros</option>
+                    <option value="variables">Variables</option>
+                </select>
+            </div>
+            <div>
+                <input id="enfermedad-profesional" type="checkbox">
+                <label for="enfermedad-profesional">Con enfermedad profesional</label>
+            </div>
+            <div>
+                <input id="con-padres-a-cargo" type="checkbox">
+                <label for="con-padres-a-cargo">Con padres a cargo</label>
+            </div>
+            <div>
+                <input id="con-hijos-a-cargo" type="checkbox">
+                <label for="con-hijos-a-cargo">Con hijos a cargo</label>
+            </div>
+        </fieldset>
+    </form>
+
+</body>
+</html>

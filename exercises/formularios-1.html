@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios &mdash; Formularios 1</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+            width: 100rem;
+            max-width: 90%;
+            margin: 0 auto;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.6rem;
+        }
+
+        button {
+            width: fit-content;
+            padding: .5rem 2rem;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Formulario de registro &mdash; Mi Web</h1>
+
+    <form action="" method="get">
+
+        <div>
+            <label for="nombre">Nombre(s)</label>
+            <input maxlength=50 id="nombre" type="text">
+        </div>
+        <div>
+            <label for="apellido">Apellidos</label>
+            <input maxlength=50 id="apellido" type="text">
+        </div>
+        <div>
+            <span>Sexo:</span>
+            <label for="hombre">Hombre</label>
+            <input id="hombre" type="radio" value="hombre" name="sexo" />
+
+            <label for="mujer">Mujer</label>
+            <input id="mujer" type="radio" value="mujer" name="sexo" />
+        </div>
+
+        <div>
+            <label for="email">Correo Electrónico</label>
+            <input id="email" type="email" />
+        </div>
+        <div>
+            <input id="info" type="checkbox" checked />
+            <label for="info">Deseo recibir información sobre novedades y ofertas</label>
+        </div>
+        <div>
+            <input id="condiciones" type="checkbox" />
+            <label for="condiciones">Declaro haber leído y aceptar las condiciones generales del programa y la normativa
+                sobre protección de datos</label>
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
+
+</body>
+
+</html>

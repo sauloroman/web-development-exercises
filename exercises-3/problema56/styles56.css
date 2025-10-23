@@ -1,0 +1,14 @@
+table {
+    border-collapse: collapse;
+    width: 800px;
+}
+
+td {
+    padding: 15px;
+    border: 1px solid black;
+}
+
+td:empty {
+     background-color: yellow;
+}
+

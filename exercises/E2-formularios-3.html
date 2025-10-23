@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios 2 - Formularios 4</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+            width: 100rem;
+            max-width: 90%;
+            margin: 0 auto;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.6rem;
+        }
+
+        button {
+            width: fit-content;
+            padding: .5rem 2rem;
+        }
+
+        fieldset div {
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <fieldset>
+            <legend>Laboral</legend>
+
+            <div>
+                <input id="por-cuenta-ajena" type="checkbox">
+                <label for="por-cuenta-ajena">Por cuenta ajena</label>
+
+                <input id="autonomo" type="checkbox">
+                <label for="autonomo">Autónomo</label>
+            </div>
+
+            <div>
+                <p>¿Alguna vez en el extranjero?</p>
+
+                <div>
+                    <input type="radio" id="si">
+                    <label for="si">Sí</label>
+                    <select name="">
+                        <option value="Dentro de la UE">Dentro de la UE</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="radio" id="no">
+                    <label for="no">No</label>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Personal</legend>
+            <div>
+                <label for="apellidos-y-nombre">Apellidos y nombre: </label>
+                <input id="apellidos-y-nombre" type="text">
+            </div>
+            <div>
+                <label for="conocimientos">Conocimientos sobre: </label>
+                <input id="conocimientos" type="text">
+            </div>
+            <div>
+                <select name="areas" id="areas" multiple>
+                    <option value="Informática">Informática</option>
+                    <option value="Conducción">Conducción</option>
+                    <option value="Finanzas">Finanzas</option>
+                    <option value="Leyes">Leyes</option>
+                </select>
+            </div>
+        </fieldset>
+    </form>
+
+</body>
+</html>

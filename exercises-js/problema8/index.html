@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 8</title>
+</head>
+<body>
+    <script>
+        document.write("<h2>Problema 8.1</h2>")
+        const num1 = parseInt(prompt("Numero 1: "))
+        const num2 = parseInt(prompt("Numero 2: "))
+        const num3 = parseInt(prompt("Numero 3: "))
+        let max = num1
+        if ( num2 > max ) max = num2
+        if ( num3 > max ) max = num3
+        document.write("<p>Mayor: " + max + " </p>")
+        
+        document.write("<h2>Problema 8.2</h2>")
+        const numx = parseInt(prompt("Ingrese un numero: "))
+        if ( numx === 0 ) {
+            document.write("<p>El número es cero</p>")
+        } else if ( numx > 0 ) {
+            document.write("<p>El número es positivo</p>")
+        } else {
+            document.write("<p>El número es negativo</p>")
+        }
+        
+        document.write("<h2>Problema 8.3</h2>")
+        const num = parseInt(prompt("Ingrese numero de hasta 3 cifras: "))
+        if ( num <= 9 ) {
+            document.write("<p>El número tiene un dígito</p>")
+        } else if ( num > 9 && num <= 99 ) {
+            document.write("<p>El número tiene dos dígitos</p>")
+        } else {
+            document.write("<p>El número tiene tres dígitos</p>")
+        }
+        
+        document.write("<h2>Problema 8.4</h2>")
+        
+        const postulante = prompt("Nombre del postulante: ")
+        const totalPreguntas = parseInt(prompt("Cantidad total de preguntas: "))
+        const totalCorrectas = parseInt(prompt("Cantidad total de preguntas correctas: "))
+        const porcentaje = totalCorrectas * 100 / totalPreguntas 
+
+        let nivel = ''
+        
+        if ( porcentaje >= 90 ) {
+            nivel = 'superior'
+        } else if ( porcentaje >= 75 && porcentaje < 90 ) {
+            nivel = 'medio'
+        } else if ( porcentaje >= 50 && porcentaje < 75 ) {
+            nivel = 'regular'
+        } else {
+            nivel = 'fuera de nivel'
+        }
+        
+        document.write("<p>Postulante:" + postulante + "</p>")
+        document.write("<p>Porcentaje:" + porcentaje + "</p>")
+        document.write("<p>Nivel:" + nivel + "</p>")
+
+
+    </script>
+</body>
+</html>

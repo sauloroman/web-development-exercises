@@ -1,0 +1,16 @@
+.padding1 {
+  padding: 20px;
+  background-color: #ffcccc;
+  margin-bottom: 10px;
+}
+
+.padding2 {
+  padding: 10px 40px;
+  background-color: #ccffcc;
+  margin-bottom: 10px;
+}
+
+.padding3 {
+  padding: 5px 15px 25px 35px;
+  background-color: #ccccff;
+}

@@ -1,0 +1,267 @@
+:root {
+    --main-font: 'Poppins';
+    
+    --indigo-color: #364fc7;
+    --white-color: #ffffff;
+    --yellow-color: #ffd43b;
+    --purple-color: #862e9c;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.5;
+    font-family: var(--main-font);
+    font-size: 1.6rem;
+    color: #555;
+}
+
+.heading-primary {
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.heading-secondary {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: var(--indigo-color);
+}
+
+/* ####################################*/
+/* HEADER */
+/* ####################################*/
+
+.header {
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    color: var(--white-color);
+    background-color: var(--indigo-color);
+}
+
+.header__left {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 2rem;
+}
+
+.header__img {
+    width: 5rem;
+}
+
+/* ####################################*/
+/* NAVIGATION */
+/* ####################################*/
+
+.navigation__list {
+    list-style: none;
+    display: flex;
+    gap: 4.2rem;
+}
+
+.navigation__item {
+    width: 20rem;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+
+    transition: background .4s ease;
+}
+
+.navigation__item:hover, .navigation__item--active {
+    background-color: var(--yellow-color);
+    color: black;
+}
+
+.navigation__link {
+    color: var(--white-color);
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.content {
+    border: 3px solid #ddd;
+    border-top: none;
+    padding: 3rem;
+    padding-bottom: 6.5rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.content__nav {
+    margin: 5rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.content__nav a {
+    padding: 1rem 2rem;
+    border-radius: 10rem;
+    background-color: var(--purple-color);
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.content__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+}
+
+.content__info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.content__info span {
+    font-weight: bold;
+}
+
+.content__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content__image-2, .content__image-3, .content__image-4 {
+    width: 100%;
+}
+
+.content__image-3 {
+    width: 110%;
+}
+
+.content__note {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.content__button {
+    padding: 1rem;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #ae3ec9;
+    color: var(--white-color);
+    width: 100%;
+}
+
+.content__image img {
+    width: 70rem;
+}
+
+.section {
+    border: 1px solid #ddd;
+    height: 50rem;
+    margin-bottom: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #000;
+    font-size: 3.2rem;
+}
+
+.section a {
+    color: var(--white-color);
+    display: inline-block;
+    margin-left: 2rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+.section--1 {
+    background-color: #d6336c;
+}
+.section--2 {
+    background-color: #0ca678;
+}
+.section--3 {
+    background-color: #f76707;
+}
+.section--4 {
+    background-color: #ae3ec9;
+}
+
+.footer {
+    background-color: var(--indigo-color);
+    color: var(--white-color);
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cover {
+    height: calc(100vh - 7rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3.2rem;
+}
+
+.cover__title {
+  background: linear-gradient(to right, #4A00E0, #8E2DE2);
+  -webkit-background-clip: text; /* Para Chrome/Safari */
+  background-clip: text;         /* Para navegadores modernos */
+  -webkit-text-fill-color: transparent; /* Hace transparente el relleno */
+  font-weight: bold; /* Opcional, para mejor visibilidad */
+  font-size: 6.4rem;
+  margin-bottom: 4rem;
+}
+
+.cover cite {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.cover span {
+    font-weight: normal;
+}
+
+.first {
+    position: relative;
+}
+
+.first__picture {
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+}
+
+.first__image {
+    width: 10rem;
+}
+
+.fix {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-js {
+    height: calc(100vh - 12rem);
+}

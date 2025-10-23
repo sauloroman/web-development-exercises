@@ -1,0 +1,28 @@
+table {
+    border-collapse: collapse;
+}
+
+p {
+    font-weight: bold;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px 15px;
+}
+
+thead th {
+    border: none;
+    color: black;
+}
+
+tbody td {
+    background-color: #e97a3b;
+}
+
+tbody td:first-child {
+    background-color: #3b65e9;
+    color: white;
+    font-weight: bold;
+}
+

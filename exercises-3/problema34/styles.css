@@ -1,0 +1,18 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.campo {
+    color: #666;
+    background-color: #ffa;
+}
+
+.btn {
+    width: fit-content;
+    color: red;
+    border: none;
+    background-color: #ccc;
+}
+

@@ -1,0 +1,21 @@
+body {
+    position: relative;
+}
+.lateral {
+    position: fixed;
+    background-color: #f5f5f5;
+    width: 200px;
+    height: 100vh;
+    top: 0%;
+    right: 0%;
+}
+.inferior {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    width: calc(100% - 200px);
+    background-color: black;
+    color: white;
+}
+

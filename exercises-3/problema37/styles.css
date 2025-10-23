@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.cabecera {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(197, 107, 107);
+}
+
+.primer-columna {
+    background-color: yellow;
+    position: absolute;
+    top: 50px;
+}
+

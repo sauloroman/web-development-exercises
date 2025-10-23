@@ -1,0 +1,16 @@
+h1, h2, h3 {
+  border-width:2px;
+  border-color:#0000ff;
+}
+
+h1 {
+  border-style:solid;
+}
+
+h2 {
+  border-style: dashed;
+}
+
+h3 {
+  border-style: dotted;
+}

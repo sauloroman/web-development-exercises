@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML ID - Marcadores ID y Enlaces</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./hw-1.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__left">
+            <div>
+                <h1 class="heading-primary">HTML &mdash; El atributo ID</h1>
+                <p>Aplicaciones web</p>
+            </div>
+
+            <a href="./hw-1.html" class="header__logo"><img class="header__img" src="../assets/img/logo-uta.png" alt="Logo Uta"></a>
+        </div>
+
+        <nav class="navigation">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="./hw-1-introduccion.html" class="navigation__link">Introducción</a></li>
+                <li class="navigation__item"><a href="./hw-1-clases-e-identificacion.html" class="navigation__link">Clases e Identificación</a></li>
+                <li class="navigation__item navigation__item--active"><a href="./hw-1-marcadores-enlaces.html" class="navigation__link">Marcadores ID y enlaces</a></li>
+                <li class="navigation__item"><a href="./hw-1-uso-javascript.html" class="navigation__link">Uso en Javascript</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content">
+         <ul class="content__info">
+            <h1 class="heading-secondary">Marcadores ID y Enlaces</h1>
+            <p>Los marcadores HTML se utilizan para permitir a los lectores saltar a partes específicas de una página web.</p>
+            <p>Los marcadores pueden ser útiles si tu página es muy larga.</p>
+            <p>Para utilizar un marcador, primero debes crearlo y luego agregarle un enlace.</p>
+            <p>Luego, cuando se hace clic en el enlace, la página se desplazará hasta la ubicación con el marcador.</p>
+        </ul>
+
+        <nav id="navegation" class="content__nav">
+            <a href="#section1">Navegar a Section 1</a>
+            <a href="#section2">Navegar a Section 2</a>
+            <a href="#section3">Navegar a Section 3</a>
+            <a href="#section4">Navegar a Section 4</a>
+        </nav>
+
+        <section class="section section--1" id="section1">
+            Section 1 &mdash; <a href="#navegation">Ir a navegación</a>
+        </section>
+        <section class="section section--2" id="section2">
+            Section 2 &mdash; <a href="#navegation">Ir a navegación</a>
+        </section>
+        <section class="section section--3" id="section3">
+            Section 3 &mdash; <a href="#navegation">Ir a navegación</a>
+        </section>
+        <section class="section section--4" id="section4">
+            Section 4 &mdash; <a href="#navegation">Ir a navegación</a>
+        </section>
+
+        <section>
+            <h2 class="heading-secondary">Implementación de código</h2>
+            <div class="content__grid">
+                <img class="content__image-3" src="../assets/img/id-image-6.png" alt="">
+                <img class="content__image-3" src="../assets/img/id-image-7.png" alt="">
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 &mdash; Universidad Tecnológica de Aguascalientes</p>
+        <cite>Saulo Román Santillán Nava</cite>
+    </footer>
+
+    <script src="./hw-1.js"></script>
+
+</body>
+</html>

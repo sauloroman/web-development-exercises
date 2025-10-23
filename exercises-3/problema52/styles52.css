@@ -1,0 +1,9 @@
+.parf:first-child {
+    border-top: 1px solid black;
+    padding-top: 10px;
+    }
+
+.parf:last-of-type{
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}

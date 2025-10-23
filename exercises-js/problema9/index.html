@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 9</title>
+</head>
+<body>
+    <script>
+        document.write("<h2>Problema 9.1</h2>")
+        const dia = parseInt(prompt("Dia: "))
+        const mes = parseInt(prompt("Mes: "))
+        const anio = parseInt(prompt("Año: "))
+        if ( dia === 25 && mes === 12 ) {
+            document.write("<p>Es Navidad</p>")
+        } else {
+            document.write("<p>No es navidad</p>")
+        }
+        
+        document.write("<h2>Problema 9.2</h2>")
+        const valor1 = parseInt(prompt("Valor 1: "))
+        const valor2 = parseInt(prompt("Valor 2: "))
+        const valor3 = parseInt(prompt("Valor 3: "))
+        let resultado = 0
+        if (  valor1 === valor2 && valor1 == valor3  ) {
+            resultado = (valor1 + valor2) * valor3
+        }
+        document.write("<p>Resultado: " + resultado + " </p>")
+        
+        document.write("<h2>Problema 9.3</h2>")
+        const num1 = parseInt(prompt("1. Ingrese un numero: "))
+        const num2 = parseInt(prompt("2. Ingrese un numero: "))
+        const num3 = parseInt(prompt("3. Ingrese un numero: "))
+        if ( num1 < 10 && num2 < 10 && num3 < 10 ) {
+            document.write("Todos los números son menores a diez")
+        } else {
+            document.write("Los números no son menores a diez")
+        }
+
+        document.write("<h2>Problema 9.4</h2>")
+        const x = parseInt(prompt("X: "))
+        const y = parseInt(prompt("Y: "))
+        if ( x > 0 && y > 0 ) {
+            document.write("Primer cuadrante")
+        } else if ( x < 0 && y > 0 ) {
+            document.write("Segundo cuadrante")
+        } else if ( x < 0 && y < 0 ) {
+            document.write("Tercer cuadrante")
+        } else {
+            document.write("Cuarto cuadrante")
+        }
+        
+        document.write("<h2>Problema 9.5</h2>")
+        let sueldo = parseFloat(prompt("Ingresa salario: "))
+        const antiguedad = parseInt(prompt("Ingrese años: "))
+        
+        if ( sueldo < 500 && antiguedad >= 10 ) {
+            sueldo *= 1.2
+        } else if ( sueldo < 500 && antiguedad < 10 ) {
+            sueldo *= 1.05
+        } else if ( sueldo >= 500 ) {
+            sueldo *= 1.00 
+        }
+        document.write("Sueldo: $" + sueldo )
+
+    </script>
+</body>
+</html>

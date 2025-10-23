@@ -1,0 +1,12 @@
+.parrafoestrecho {
+      width: 200px;
+      text-align: justify;
+      background-color: #f0f0f0;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+    
+    p {
+      background-color: #e0e0ff;
+      padding: 10px;
+    }

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML ID - Uso en Javascript</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./hw-1.css">
+</head>
+<body class="fix">
+    <header class="header">
+        <div class="header__left">
+            <div>
+                <h1 class="heading-primary">HTML &mdash; El atributo ID</h1>
+                <p>Aplicaciones web</p>
+            </div>
+
+            <a href="./hw-1.html" class="header__logo"><img class="header__img" src="../assets/img/logo-uta.png" alt="Logo Uta"></a>
+        </div>
+
+        <nav class="navigation">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="./hw-1-introduccion.html" class="navigation__link">Introducción</a></li>
+                <li class="navigation__item"><a href="./hw-1-clases-e-identificacion.html" class="navigation__link">Clases e Identificación</a></li>
+                <li class="navigation__item"><a href="./hw-1-marcadores-enlaces.html" class="navigation__link">Marcadores ID y enlaces</a></li>
+                <li class="navigation__item navigation__item--active"><a href="./hw-1-uso-javascript.html" class="navigation__link">Uso en Javascript</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content content-js"> 
+        <div class="content__grid">
+            <ul class="content__info">
+                <h1 class="heading-secondary">Uso del atributo id en JavaScript</h1>
+                <p>El <strong>id</strong> JavaScript también puede utilizar el atributo para realizar algunas tareas para ese elemento específico.</p>
+                <p>JavaScript puede acceder a un elemento con un id específico con el <strong>getElementById()</strong> método.</p>
+                <div>
+                    <button id="saludarBoton" class="content__button">Saludar a todos 👋</button>
+                </div>
+            </ul>
+            <div>
+                <img class="content__image-4" src="../assets/img/id-image-8.png" alt="Ejemplo de id">
+                <img class="content__image-4" src="../assets/img/id-image-9.png" alt="Ejemplo de id">
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 &mdash; Universidad Tecnológica de Aguascalientes</p>
+        <cite>Saulo Román Santillán Nava</cite>
+    </footer>
+
+    <script src="./hw-1.js"></script>
+
+</body>
+</html>

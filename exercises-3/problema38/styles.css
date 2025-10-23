@@ -1,0 +1,30 @@
+body { position: relative; }
+div { position: absolute;}
+div:nth-child(1) {
+    color: white;
+    z-index: 1;
+    top: 0%;
+    left: 0%;
+    background-color: black;
+    width: 300px;
+    height: 300px;
+}
+div:nth-child(2) {
+    z-index: 2;
+    top: 10%;
+    left: 5%;
+    transform: translate(-5%, 10%);
+    width: 250px;
+    height: 250px;
+    background-color: gray;
+}
+div:nth-child(3) {
+    top: 25%;
+    left: 15%;
+    transform: translate(-31%, 25%);
+    z-index: 3;
+    background-color: #f5f5f5;
+    width: 200px;
+    height: 200px;
+}
+
