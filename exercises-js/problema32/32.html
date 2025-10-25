@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tema 32 - Hipervínculos con Efectos</title>
+    </head>
+    <body>
+        <h2>Servicios de Webmail</h2>
+        <table border="1">
+            <tr>
+                <td id="celda1" onmouseover="cambiarColor(1)" onmouseout="restaurarColor(1)">
+                    <a href="https://www.gmail.com" target="_blank">Gmail</a>
+                </td>
+                <td id="celda2" onmouseover="cambiarColor(2)" onmouseout="restaurarColor(2)">
+                    <a href="https://www.outlook.com" target="_blank">Hotmail</a>
+                </td>
+                <td id="celda3" onmouseover="cambiarColor(3)" onmouseout="restaurarColor(3)">
+                    <a href="https://mail.yahoo.com" target="_blank">Yahoo</a>
+                </td>
+            </tr>
+        </table>
+
+        <script src="./app.js"></script>
+    </body>
+</html>
